@@ -1,0 +1,120 @@
+:root {
+    --primary: #00b7af;
+    --dark: #10181f;
+    --light: #ffffff;
+    --secondary: #6a7071;
+    --bg-gradient: linear-gradient(135deg, #10181f 0%, #1a2a33 100%);
+    --button-bg: #222d36;
+    --button-hover: #2c3a45;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: var(--bg-gradient);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.calculator-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.calculator {
+    background: #0d1217;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.display {
+    padding: 30px 20px;
+    text-align: right;
+    background: rgba(0, 0, 0, 0.2);
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.previous-operand {
+    color: var(--secondary);
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    height: 1.5rem;
+}
+
+.current-operand {
+    color: var(--light);
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 1.2rem;
+    background: var(--button-bg);
+    color: var(--light);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn:hover {
+    background: var(--button-hover);
+}
+
+.btn:active {
+    filter: brightness(0.8);
+}
+
+.operator {
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.equals {
+    background: var(--primary);
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.equals:hover {
+    background: #009d96;
+}
+
+.clear {
+    color: #ff5e5e;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+@media (max-width: 350px) {
+    .btn {
+        padding: 15px;
+        font-size: 1rem;
+    }
+}
