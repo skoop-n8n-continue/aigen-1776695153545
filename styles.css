@@ -1,11 +1,11 @@
 :root {
-    --primary: #00ff88;
-    --dark: #0a0f0d;
-    --light: #e0f2f1;
-    --secondary: #a0ffe0;
-    --bg-gradient: linear-gradient(135deg, #0a0f0d 0%, #15201b 100%);
-    --button-bg: #1a2521;
-    --button-hover: #263530;
+    --primary: #ffcc00;
+    --dark: #0f0f00;
+    --light: #fffde7;
+    --secondary: #fff176;
+    --bg-gradient: linear-gradient(135deg, #0f0f00 0%, #1a1a00 100%);
+    --button-bg: #1c1c00;
+    --button-hover: #2d2d00;
 }
 
 * {
@@ -31,11 +31,11 @@ body {
 }
 
 .calculator {
-    background: #0a0f0d;
+    background: #0f0f00;
     border-radius: 24px;
-    box-shadow: 0 20px 60px rgba(0, 255, 136, 0.15);
+    box-shadow: 0 20px 60px rgba(255, 204, 0, 0.15);
     overflow: hidden;
-    border: 1px solid rgba(0, 255, 136, 0.2);
+    border: 1px solid rgba(255, 204, 0, 0.2);
 }
 
 .display {
@@ -70,7 +70,7 @@ body {
     grid-template-columns: repeat(4, 1fr);
     gap: 1px;
     padding: 1px;
-    background: rgba(0, 255, 136, 0.05);
+    background: rgba(255, 204, 0, 0.05);
 }
 
 .btn {
@@ -91,7 +91,7 @@ body {
 
 .btn:active {
     transform: scale(0.96);
-    background: #2d403a;
+    background: #3e3e00;
 }
 
 .operator {
@@ -101,13 +101,13 @@ body {
 
 .equals {
     background: var(--primary);
-    color: #0a0f0d;
+    color: #0f0f00;
     font-weight: 600;
 }
 
 .equals:hover {
-    background: #33ffaa;
-    box-shadow: 0 0 15px rgba(0, 255, 136, 0.4);
+    background: #ffdb4d;
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.4);
 }
 
 .clear {
